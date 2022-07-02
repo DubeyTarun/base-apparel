@@ -1,0 +1,142 @@
+body {
+  background-image: url("images/bg-pattern-desktop.svg");
+  max-width: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/***********Class Selectors**********/
+.alert {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  line-height: 1;
+  padding: 7rem 1rem 2rem 0;
+}
+
+.alert-first {
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
+}
+
+.alert-second {
+  font-weight: 600;
+}
+
+.details {
+  padding: 4rem 17rem 0 10rem;
+}
+
+.email-button {
+  background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  position: absolute;
+  right: 0;
+  width: 25%;
+}
+
+.email-common {
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: hsl(0, 36%, 70%);
+  height: 3.5rem;
+}
+
+.email-input {
+  padding: 0.5rem 7.5rem 0.5rem 3rem;
+  width: 100%;
+}
+
+.email-input:focus {
+  outline: none;
+}
+
+.email-input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.error-button {
+  background-image: linear-gradient(to right, hsl(0, 80%, 103%), hsl(0, 61%, 82%));
+}
+
+.error-input {
+  border-color: hsl(0, 93%, 68%);
+}
+
+.error-icon {
+  position: absolute;
+  right: 27%;
+  top: 3rem;
+  visibility: hidden;
+}
+
+.error-message {
+  color: hsl(0, 93%, 68%);
+  padding-left: 11%;
+  padding-top: 0.5rem;
+  visibility: hidden;
+}
+
+.hero-image-mobile {
+  display: none;
+  width: 100%;
+}
+
+.hero-image-desktop {
+  display: block;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+.logo-desktop {
+  display: block;
+}
+
+.info {
+  color: hsl(0, 36%, 70%);
+  font-size: 1rem;
+}
+
+.input {
+  padding-top: 2rem;
+  position: relative;
+}
+
+.visibility-on {
+  visibility: visible;
+}
+
+/*****************MEDIA QUERIES**********************/
+@media (max-width:400px) {
+  .alert {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .details {
+    padding: 0 14.75%;
+    text-align: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-image-mobile {
+    display: block;
+  }
+
+  .hero-image-desktop {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: inline;
+    padding: 3.5%;
+  }
+
+  .logo-desktop {
+    display: none;
+  }
+}
